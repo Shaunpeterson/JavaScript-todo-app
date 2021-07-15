@@ -2,12 +2,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript Todo App</title>
-	<link rel="stylesheet" type="text/css" href="./Style/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="css/test6.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
+
 <body>
-<header>Todo App</header>
-<p> Shaun</p>
+  
+    <section class="todo-list">
+    	<img  src="images/to1.png" style="width: 100%">
+    	<div class="p-3 mb-2 bg-info text-white">
+        <div id="date"></div>
+        </div>
+        <!-- Adding tasks --->
+        <div class="todo-list__header">
+            <input class="todo-list__input" type="text" placeholder="Add task here...">
+            <button class="todo-list__btn-add"><i class=" far fa-plus-square"></i></button>
+        </div>
+        <!-- Tasks that are done --->
+        <ul  class="todo-list__items-done">
+        <div class="flip four col">
+       	<!-- Hover effect for completed tasks --->
+       		<div class="box">
+          		<div class="overlay">
+            	<i class="fa fa-thumbs-up fa-2x" aria-hidden="true" ><span style="margin-left: 70px">Completed!</span></i> 
+          		</div>
+        	</div>
+      	</div>
+        </ul>
+        <ul id="id01"  class="todo-list__items-undone">
+            <div class="p-1 mb-2 bg-info text-white">Current Tasks:</p></div>   
+        </ul>
+
+        <button id="move" class="btn btn-primary btn-sm" onclick="sortList()">sort</button>
+        
+    </section>
 
 
 <script type="text/javascript" src="./Script/Code.js"></script>
