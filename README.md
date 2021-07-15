@@ -1,5 +1,6 @@
 # JavaScript -todo-app 2021.
  This Todo App is focused on pure Javascript and Css.
+ Hover effect to display Completed Tasks.
  Local storge to save updated changes. 
  Reactive for Mobile, Tablet and web view. User friendly. 
  Project for Front-end web development. 
